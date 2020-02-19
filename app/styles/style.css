@@ -1,0 +1,74 @@
+:root {
+  --white-smoke: #fdfdfe;
+  --light-grey: #edeff0;
+  --grey: #9c9c9c;
+  --dark-blue: #405357;
+  --pale-blue: #607d82;
+}
+
+html {
+  background-color: #edeff0;
+}
+
+header {
+  background-color: #fdfdfe;
+  padding: 30px 200px;
+}
+
+#companyLogo {
+  color: #405357;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: tahoma, serif;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 0 3px;
+  border-bottom: 3px solid;
+
+  display:inline-block;
+}
+
+#navigation {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0 25px;
+}
+#navigation li {
+  display: inline-block;
+}
+#navigation li a {
+  text-decoration: none;
+  color: #9c9c9c;
+  padding: 15px 25px;
+  display: inline-block;
+}
+#navigation li:hover a {
+  color: #405357;
+}
+#navigation li a.active {
+  color: #607d82;
+}
+
+#account {
+  display: inline-block;
+  color: #607d82;
+  cursor: pointer;
+  margin-right: 12px
+}
+#account i {
+  font-size: 32px;
+  margin-right: 7px;
+  vertical-align: -10px;
+}
+
+#basket {
+  display: inline-block;
+  color: #607d82;
+  cursor: pointer;
+}
+#basket i {
+  font-size: 32px;
+  vertical-align: -10px;
+}

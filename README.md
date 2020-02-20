@@ -1,6 +1,6 @@
 # frontend-presentation
-The correct way of implementing a web app
-Step-by-step transformation of a crappy web page, with bootstrap and react.js
+- the correct way of implementing a web app
+- step-by-step transformation of a crappy web page, with bootstrap and react.js
 
 Phase 1
 - basic straight forward implementation

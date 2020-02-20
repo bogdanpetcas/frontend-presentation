@@ -10,9 +10,12 @@ html {
   background-color: #edeff0;
 }
 
-header {
+/* Header */
+
+#header {
   background-color: #fdfdfe;
-  padding: 30px 200px;
+  padding: 30px;
+  text-align: center;
 }
 
 #companyLogo {
@@ -72,3 +75,4 @@ header {
   font-size: 32px;
   vertical-align: -10px;
 }
+

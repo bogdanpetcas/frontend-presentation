@@ -4,10 +4,13 @@
   --grey: #9c9c9c;
   --dark-blue: #405357;
   --pale-blue: #607d82;
+  --dark-grey: #2f2f2f;
 }
 
-html {
+html,
+body {
   background-color: #edeff0;
+  color: var(--dark-grey);
 }
 
 /* Header */
@@ -76,3 +79,31 @@ html {
   vertical-align: -10px;
 }
 
+/* Main */
+
+#main {
+  padding: 48px;
+  text-align: center;
+}
+
+/* Aside */
+
+#aside {
+  width: 240px;
+  display: inline-block;
+  text-align: left;
+}
+.page-header {
+  color: #405357;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 43px;
+}
+
+/* Section */
+
+#section {
+  width: 670px;
+  display: inline-block;
+  text-align: left;
+}

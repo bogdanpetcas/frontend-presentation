@@ -41,57 +41,64 @@
     </div>
   </div>
 
-  <div id="main" class="clearfix">
+  <div id="main">
     <div class="container">
       <h1 class="page-header">Decor</h1>
-      <div id="aside">
-        <h5 class="page-filter">Filter by</h5>
-        <div id="priceFilter">
-          <a href="#price-submenu" data-toggle="collapse" aria-expanded="false" class="collapsed">Price</a>
-          <div id="price-submenu" class="nav collapse">
-            <div id="priceRangeSelector">
-              <a class="knob left"></a>
-              <div class="price-range-bar"></div>
-              <a class="knob right"></a>
+      <div class="row no-gutters">
+        <div class="col-auto">
+          <div id="aside">
+            <h5 class="page-filter">Filter by</h5>
+            <div id="priceFilter">
+              <a href="#priceSubmenu" data-toggle="collapse" aria-expanded="false" class="collapsed">Price</a>
+              <div id="priceSubmenu" class="nav collapse">
+                <div id="priceRangeSelector">
+                  <a class="knob left"></a>
+                  <div class="price-range-bar"></div>
+                  <a class="knob right"></a>
+                </div>
+                <div id="priceValues">
+                  <span class="min-price">10 lei</span>
+                  <span class="max-price">300 lei</span>
+                </div>
+              </div>
             </div>
-            <div id="priceValues">
-              <span class="min-price">10 lei</span>
-              <span class="max-price">300 lei</span>
+            <div id="colorFilter">
+              <a href="#colorSubmenu" data-toggle="collapse" aria-expanded="false" class="collapsed">Color</a>
+              <div id="colorSubmenu" class="nav collapse">
+                <div id="colorOptions">
+                  <div class="color-option blue"></div>
+                  <div class="color-option orange"></div>
+                  <div class="color-option white"></div>
+                  <div class="color-option bleumarin"></div>
+                  <div class="color-option green"></div>
+                  <div class="color-option grey"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div id="colorFilter">
-          <a href="#color-submenu" data-toggle="collapse" aria-expanded="false" class="collapsed">Color</a>
-          <div id="color-submenu" class="nav collapse">
-            <div class="color-options">
-              <div class="color-option blue"></div>
-              <div class="color-option orange"></div>
-              <div class="color-option white"></div>
-              <div class="color-option bleumarin"></div>
-              <div class="color-option green"></div>
-              <div class="color-option grey"></div>
+        <div class="col">
+          <div id="section">
+            <div class="row no-gutters justify-content-end">
+              <div class="col-auto">
+                <div id="sortBy" class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSortBy"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort by
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownSortBy">
+                    <button class="dropdown-item" data-sort="default">Sort by</button>
+                    <button class="dropdown-item" data-sort="priceAsc">Price (low to high)</button>
+                    <button class="dropdown-item" data-sort="priceDesc">Price (high to low)</button>
+                    <button class="dropdown-item" data-sort="nameAsc">Name A-Z</button>
+                    <button class="dropdown-item" data-sort="nameDesc">Name Z-A</button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div id="section">
-        <div id="sortBy" class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSortBy" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Sort by
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownSortBy">
-            <button class="dropdown-item" data-sort="default">Sort by</button>
-            <button class="dropdown-item" data-sort="priceAsc">Price (low to high)</button>
-            <button class="dropdown-item" data-sort="priceDesc">Price (high to low)</button>
-            <button class="dropdown-item" data-sort="nameAsc">Name A-Z</button>
-            <button class="dropdown-item" data-sort="nameDesc">Name Z-A</button>
+            <div id="products" class="row"></div>
           </div>
-        </div>
-
-        <div id="products">
-          <div class="row"></div>
         </div>
       </div>
     </div>

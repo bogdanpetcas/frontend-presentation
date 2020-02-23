@@ -1,6 +1,5 @@
 #aside {
   width: 200px;
-  display: inline-block;
 }
 .page-header {
   color: var(--dark-blue);
@@ -44,8 +43,8 @@ a[data-toggle=collapse][aria-expanded=true]::after {
   top: -3px;
 }
 
-#price-submenu,
-#color-submenu {
+#priceSubmenu,
+#colorSubmenu {
   width: 100%;
 }
 

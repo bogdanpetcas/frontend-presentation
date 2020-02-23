@@ -1,10 +1,5 @@
 #section {
-  width: calc(100% - 200px);
-  float: right;
-}
-
-#sortBy {
-  float: right;
+  margin-left: 30px;
 }
 #dropdownSortBy {
   background-color: transparent;
@@ -36,8 +31,7 @@
 }
 
 #products {
-  margin-top: 78px;
-  margin-left: 30px;
+  margin-top: 40px;
 }
 .product {
   cursor: pointer;

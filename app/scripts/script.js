@@ -38,7 +38,7 @@ function sortProducts(products, option) {
 }
 
 function renderProducts(list) {
-  var container = $('#products > .row');
+  var container = $('#products');
   container.empty();
 
   list.forEach(p => {
@@ -57,7 +57,7 @@ function renderProducts(list) {
 }
 
 function bindDropdownSortBy() {
-  $('#dropdownSortBy + .dropdown-menu .dropdown-item').on('click', function(event) {
+  $('#sortBy .dropdown-item').on('click', function(event) {
     var element = event.target;
     var sortOption = $(element).data('sort');
     var list = sortProducts([...PRODUCTS], sortOption);

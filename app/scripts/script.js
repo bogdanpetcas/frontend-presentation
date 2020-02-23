@@ -1,10 +1,9 @@
-var url = '/products.json';
 var PRODUCTS = [];
 
 function init(data) {
-  PRODUCTS = data;
-
-  renderProducts(PRODUCTS);
+  PRODUCTS = data; // store the product list in a global variable
+  renderProducts(PRODUCTS); // display products on page
+  bindDropdownSortBy(); // set bindings
 }
 
 function sortProducts(products, option) {
@@ -57,7 +56,17 @@ function renderProducts(list) {
   });
 }
 
-fetch(url).then(response => {
+function bindDropdownSortBy() {
+  $('#dropdownSortBy + .dropdown-menu .dropdown-item').on('click', function(event) {
+    var element = event.target;
+    var sortOption = $(element).data('sort');
+    var list = sortProducts([...PRODUCTS], sortOption);
+    renderProducts(list);
+    $('#dropdownSortBy').text($(element).text());
+  });
+}
+
+fetch('/products.json').then(response => {
   response.json().then(data => {
     init(data);
   })

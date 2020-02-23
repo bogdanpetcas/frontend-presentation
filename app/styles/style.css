@@ -240,6 +240,9 @@ a[data-toggle=collapse][aria-expanded=true]::after {
 .dropdown-item {
   padding: 7px 12px;
 }
+.dropdown-item:active {
+  background-color: #607d82;
+}
 
 #products {
   margin-top: 78px;

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Wooden chair",
+    "price": 159.90,
+    "imageUrl": "https://static.wixstatic.com/media/84770f_9e9aeeff55304a44aaccc5aabb4140f4.png/v1/fill/w_324,h_324,al_c,q_85,usm_0.66_1.00_0.01/84770f_9e9aeeff55304a44aaccc5aabb4140f4.webp"
+  },
+  {
+    "name": "Wood floor lamp",
+    "price": 127.90,
+    "imageUrl": "https://static.wixstatic.com/media/84770f_07b37235e2394a1bb679d4c99c2485d2.png/v1/fill/w_324,h_324,al_c,q_85,usm_0.66_1.00_0.01/84770f_07b37235e2394a1bb679d4c99c2485d2.webp"
+  },
+  {
+    "name": "Laundry basket",
+    "price": 29.90,
+    "imageUrl": "https://static.wixstatic.com/media/84770f_33ea91c90cb94d519436fc8d39e9cc6b.png/v1/fill/w_324,h_324,al_c,q_85,usm_0.66_1.00_0.01/84770f_33ea91c90cb94d519436fc8d39e9cc6b.webp"
+  },
+  {
+    "name": "Knitted throw",
+    "price": 39.90,
+    "imageUrl": "https://static.wixstatic.com/media/84770f_d2ead568ea7940a7aabf547b12f955f1.png/v1/fill/w_324,h_324,al_c,q_85,usm_0.66_1.00_0.01/84770f_d2ead568ea7940a7aabf547b12f955f1.webp"
+  },
+  {
+    "name": "Low pile rug",
+    "price": 89.90,
+    "imageUrl": "https://static.wixstatic.com/media/84770f_b091b272fe5d4a56a44bb36e8ce6ee84.png/v1/fill/w_324,h_324,al_c,q_85,usm_0.66_1.00_0.01/84770f_b091b272fe5d4a56a44bb36e8ce6ee84.webp"
+  },
+  {
+    "name": "Cushion covers",
+    "price": 29.90,
+    "imageUrl": "https://static.wixstatic.com/media/84770f_baa3c5c34a17428f9e6adb90f59f669c.png/v1/fill/w_324,h_324,al_c,q_85,usm_0.66_1.00_0.01/84770f_baa3c5c34a17428f9e6adb90f59f669c.webp"
+  },
+  {
+    "name": "Glass bottles",
+    "price": 49.90,
+    "imageUrl": "https://static.wixstatic.com/media/84770f_c29e1c3231fa4b649aaba5c938cd75d8.png/v1/fill/w_324,h_324,al_c,q_85,usm_0.66_1.00_0.01/84770f_c29e1c3231fa4b649aaba5c938cd75d8.webp"
+  }
+]

@@ -1,0 +1,67 @@
+#header {
+  background-color: #fdfdfee9;
+  padding: 30px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#companyLogo {
+  color: var(--dark-blue);
+  font-weight: bold;
+  font-size: 17px;
+  font-family: tahoma, serif;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 0 3px;
+  border-bottom: 3px solid;
+
+  display:inline-block;
+}
+
+#navigation {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0 25px;
+}
+#navigation li {
+  display: inline-block;
+}
+#navigation li a {
+  text-decoration: none;
+  color: var(--grey);
+  padding: 15px 25px;
+  display: inline-block;
+}
+#navigation li:hover a {
+  color: var(--dark-blue);
+}
+#navigation li a.active {
+  color: var(--pale-blue);
+}
+
+#account {
+  display: inline-block;
+  color: var(--pale-blue);
+  cursor: pointer;
+  margin-right: 12px;
+  margin-top: 12px;
+}
+#account i {
+  font-size: 32px;
+  margin-right: 7px;
+  vertical-align: -10px;
+}
+
+#basket {
+  display: inline-block;
+  color: var(--pale-blue);
+  cursor: pointer;
+}
+#basket i {
+  font-size: 32px;
+  vertical-align: -10px;
+}

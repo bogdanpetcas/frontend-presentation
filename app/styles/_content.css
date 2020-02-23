@@ -1,0 +1,50 @@
+#section {
+  width: calc(100% - 200px);
+  float: right;
+}
+
+#sortBy {
+  float: right;
+}
+#dropdownSortBy {
+  background-color: transparent;
+  border-radius: 0;
+  color: var(--dark-grey);
+  border-color: inherit;
+  box-shadow: none;
+  width: 200px;
+  text-align: left;
+}
+#dropdownSortBy::after {
+  position: absolute;
+  right: 13px;
+  top: 17px;
+}
+.dropdown-menu {
+  padding: 0;
+  background-color: var(--light-grey);
+  border-radius: 0;
+  border-color: var(--dark-grey);
+  margin-top: -1px;
+  min-width: 100%;
+}
+.dropdown-item {
+  padding: 7px 12px;
+}
+.dropdown-item:active {
+  background-color: var(--pale-blue);
+}
+
+#products {
+  margin-top: 78px;
+  margin-left: 30px;
+}
+.product {
+  cursor: pointer;
+}
+.product img {
+  width: 100%;
+}
+.product-info {
+  margin-top: 15px;
+}

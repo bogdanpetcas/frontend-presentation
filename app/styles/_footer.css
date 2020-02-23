@@ -1,0 +1,13 @@
+#footer {
+  padding: 20px;
+  background-color: var(--pale-blue);
+  color: var(--light-grey);
+}
+#footer p {
+  margin: 0;
+  text-align: center;
+}
+#footer p a {
+  color: var(--light-grey);
+  text-decoration: underline;
+}

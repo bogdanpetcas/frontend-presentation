@@ -1,0 +1,16 @@
+@import "./_vars.css";
+@import "./_header.css";
+@import "./_sideMenu.css";
+@import "./_content.css";
+@import "./_footer.css";
+
+html,
+body {
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+}
+
+main {
+  padding: 48px 0;
+  margin-top: 114px;
+}

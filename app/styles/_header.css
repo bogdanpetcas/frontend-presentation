@@ -1,13 +1,16 @@
-#header {
+header {
   background-color: #fdfdfee9;
   padding: 30px 0;
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 1001;
 }
-
-#companyLogo {
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+.navbar-brand {
   color: var(--dark-blue);
   font-weight: bold;
   font-size: 17px;
@@ -17,29 +20,20 @@
   text-decoration: none;
   padding: 0 0 3px;
   border-bottom: 3px solid;
-
-  display:inline-block;
+  margin-right: 25px;
 }
-
-#navigation {
-  list-style: none;
-  display: inline-block;
-  padding: 0;
-  margin: 0 25px;
+.navbar-brand:hover {
+  color: var(--dark-blue);
 }
-#navigation li {
-  display: inline-block;
-}
-#navigation li a {
+.navbar .navbar-nav .nav-link {
   text-decoration: none;
   color: var(--grey);
   padding: 15px 25px;
-  display: inline-block;
 }
-#navigation li:hover a {
+.navbar .navbar-nav .nav-link:hover {
   color: var(--dark-blue);
 }
-#navigation li a.active {
+.navbar .navbar-nav .nav-link.active {
   color: var(--pale-blue);
 }
 
@@ -47,8 +41,7 @@
   display: inline-block;
   color: var(--pale-blue);
   cursor: pointer;
-  margin-right: 12px;
-  margin-top: 12px;
+  margin-right: 16px;
 }
 #account i {
   font-size: 32px;

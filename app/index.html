@@ -14,21 +14,19 @@
 </head>
 
 <body>
-  <div id="header">
+  <header>
     <div class="container">
-      <div class="row no-gutters">
-        <div class="col">
-          <a href="/" id="companyLogo">indoor</a>
-          <ul id="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Decor</a></li>
-            <li><a href="#">Kitchen</a></li>
-            <li><a href="#" class="active">Bedroom</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-auto">
+      <nav class="navbar navbar-expand-sm">
+        <a href="/" class="navbar-brand">indoor</a>
+        <div class="collapse navbar-collapse">
+          <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Decor</a>
+            <a class="nav-item nav-link" href="#">Kitchen</a>
+            <a class="nav-item nav-link active" href="#">Bedroom</a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+          </div>
           <div id="account">
             <i class="material-icons">account_circle</i>
             <span>Log In</span>
@@ -37,16 +35,16 @@
             <i class="material-icons">shopping_cart</i>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div id="main">
+  <main>
     <div class="container">
       <h1 class="page-header">Decor</h1>
       <div class="row no-gutters">
         <div class="col-auto">
-          <div id="aside">
+          <aside>
             <h5 class="page-filter">Filter by</h5>
             <div id="priceFilter">
               <a href="#priceSubmenu" data-toggle="collapse" aria-expanded="false" class="collapsed">Price</a>
@@ -75,10 +73,10 @@
                 </div>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
         <div class="col">
-          <div id="section">
+          <section>
             <div class="row no-gutters justify-content-end">
               <div class="col-auto">
                 <div id="sortBy" class="dropdown">
@@ -98,15 +96,15 @@
             </div>
 
             <div id="products" class="row"></div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
-  <div id="footer">
+  <footer>
     <p>2020 INDOOR template. From <a href="www.wix.com">Wix.com</a></p>
-  </div>
+  </footer>
 
   <script src="vendor/jquery/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>

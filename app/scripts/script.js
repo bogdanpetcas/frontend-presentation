@@ -1,4 +1,4 @@
-var PRODUCTS = [];
+var PRODUCTS = []; // will act as a global store
 
 function init(data) {
   PRODUCTS = data; // store the product list in a global variable
@@ -44,20 +44,20 @@ function renderProducts(list) {
   list.forEach(p => {
     container.append(
       '<div class="col-4">' +
-        '<div class="product">' +
-          '<img src="' + p.imageUrl + '">' +
-          '<div class="product-info">' +
-            '<h6 class="product-name">' + p.name + '</h6>' +
-            '<p class="product-price">' + p.price + ' lei</p>' +
-          '</div>' +
-        '</div>' +
+      '<div class="product">' +
+      '<img src="' + p.imageUrl + '">' +
+      '<div class="product-info">' +
+      '<h6 class="product-name">' + p.name + '</h6>' +
+      '<p class="product-price">' + p.price + ' lei</p>' +
+      '</div>' +
+      '</div>' +
       '</div>'
     );
   });
 }
 
 function bindDropdownSortBy() {
-  $('#sortBy .dropdown-item').on('click', function(event) {
+  $('#sortBy .dropdown-item').on('click', function (event) {
     var element = event.target;
     var sortOption = $(element).data('sort');
     var list = sortProducts([...PRODUCTS], sortOption);
@@ -66,8 +66,10 @@ function bindDropdownSortBy() {
   });
 }
 
-fetch('/products.json').then(response => {
-  response.json().then(data => {
-    init(data);
-  })
+$(document).ready(function () {
+  fetch('/products.json').then(response => {
+    response.json().then(data => {
+      init(data);
+    })
+  });
 });

@@ -44,13 +44,13 @@ function renderProducts(list) {
   list.forEach(p => {
     container.append(
       '<div class="col-4">' +
-      '<div class="product">' +
-      '<img src="' + p.imageUrl + '">' +
-      '<div class="product-info">' +
-      '<h6 class="product-name">' + p.name + '</h6>' +
-      '<p class="product-price">' + p.price + ' lei</p>' +
-      '</div>' +
-      '</div>' +
+        '<div class="product">' +
+          '<img src="' + p.imageUrl + '">' +
+          '<div class="product-info">' +
+            '<h6 class="product-name">' + p.name + '</h6>' +
+            '<p class="product-price">' + p.price + ' lei</p>' +
+          '</div>' +
+        '</div>' +
       '</div>'
     );
   });

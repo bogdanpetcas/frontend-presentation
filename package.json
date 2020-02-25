@@ -1,0 +1,21 @@
+{
+  "name": "modern-web-development",
+  "version": "1.0.0",
+  "description": "Introduction to modern web development",
+  "main": "app/scripts/script.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch --mode development",
+    "serve": "http-server app"
+  },
+  "author": "Bogdan Paul Petcas",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}

@@ -1,12 +1,4 @@
-var PRODUCTS = []; // will act as a global store
-
-function init(data) {
-  PRODUCTS = data; // store the product list in a global variable
-  renderProducts(PRODUCTS); // display products on page
-  bindDropdownSortBy(); // set bindings
-}
-
-function sortProducts(products, option) {
+export const sortProducts = function (products, option) {
   switch (option) {
     case 'priceAsc':
       return products.sort(function (a, b) { return a.price - b.price });
@@ -37,7 +29,7 @@ function sortProducts(products, option) {
   }
 }
 
-function renderProducts(list) {
+export const renderProducts = function (list) {
   var container = $('#products');
   container.empty();
 
@@ -55,21 +47,3 @@ function renderProducts(list) {
     );
   });
 }
-
-function bindDropdownSortBy() {
-  $('#sortBy .dropdown-item').on('click', function (event) {
-    var element = event.target;
-    var sortOption = $(element).data('sort');
-    var list = sortProducts([...PRODUCTS], sortOption);
-    renderProducts(list);
-    $('#dropdownSortBy').text($(element).text());
-  });
-}
-
-$(document).ready(function () {
-  fetch('/products.json').then(response => {
-    response.json().then(data => {
-      init(data);
-    })
-  });
-});

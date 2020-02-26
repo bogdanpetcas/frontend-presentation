@@ -1,15 +1,16 @@
-# frontend-presentation
+# Modern web development
 - the correct way of implementing a web app
-- step-by-step transformation of a crappy web page, with bootstrap and react.js
+- step-by-step transformation of a normal web page, with bootstrap and react.js
 
-Phase 1
+Phase 1 - Make it work
 - basic straight forward implementation
-- single file css and js
+- single file for css and js
 
-Phase 2
+Phase 2 - Make it better
 - use HTML5 semantic elements (header, nav, main, footer, etc.)
 - use Bootstrap classes and grid system properly
-- use modules for js
+- use modules to organize the functionality
 
-Phase 3
+Phase 3 - Add React
 - add React to the project
+- basic overview

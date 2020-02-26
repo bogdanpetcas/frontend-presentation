@@ -10,10 +10,14 @@
   },
   "author": "Bogdan Paul Petcas",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"

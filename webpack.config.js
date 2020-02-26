@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./app/scripts/main.js", //path relative to this file
+  entry: "./app/src/index.js", //path relative to this file
   output: {
     path: __dirname + '/app/dist',
     filename: "bundle.js" //path relative to this file
@@ -8,7 +8,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
         loader: ['babel-loader']
       }

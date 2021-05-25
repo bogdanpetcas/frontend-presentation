@@ -1,4 +1,4 @@
-# Modern web development
+# Modern web development (Work in progress)
 - the correct way of implementing a web app
 - step-by-step transformation of a normal web page, with bootstrap and react.js
 
